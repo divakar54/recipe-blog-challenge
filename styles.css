@@ -5,7 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    
+    font-size: 16px;
+}
 :root{
     --font-monts: 'Montserrat', sans-serif;
     --font-playd: 'Playfair Display', serif;
@@ -15,7 +18,7 @@
 
 .container{
     margin: 0 auto;
-    width: 63%;
+    width: 70%;
 }
 .recipe-header{
     width: 63%;
@@ -70,7 +73,7 @@
     flex-direction: column;
     justify-content: center;
     font-family: var(--font-monts);
-    font-size: 0.875em;
+    font-size: 0.875rem;
     padding-left: 0.85em;
 }
 
@@ -150,6 +153,9 @@ footer{
 }
 
 @media only screen and (max-width: 1205px){
+    html{
+        font-size: 12px;
+    }
     .recipe-main{
         display: inline;
     }
@@ -168,6 +174,9 @@ footer{
     }
 }
 @media only screen and (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
     .card-item img{
         width: 50%;
         height: 50%;
