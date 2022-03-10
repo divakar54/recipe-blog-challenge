@@ -1,0 +1,141 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-monts: 'Montserrat', sans-serif;
+    --font-playd: 'Playfair Display', serif;
+}
+
+.fa { font-family: 'FontAwesome' !important; }
+
+.container{
+    margin: 0 auto;
+    width: 63%;
+}
+.recipe-header{
+    width: 63%;
+    margin: 2em 0;
+}
+.recipe-header h1{
+    font-family: var(--font-playd);
+}
+.recipe-header p{
+    font-family: var(--font-monts);
+    font-style: italic;
+}
+.main-img{
+    width: 100%;
+}
+.recipe-main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+/* Recipe Instruction Card Start */
+
+.instructions-card{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    margin: 3em 0 0 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.card-item{
+    display: flex;
+    margin: 1em 2em;
+   
+}
+
+.card-item img{
+    width: 28px;
+}
+
+.card-item svg{
+    width: 28px;
+    height: 28px;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-monts);
+    font-size: 0.875em;
+    padding-left: 0.85em;
+}
+
+.gray{
+    font-size: 0.625em;
+    color: #BDBDBD;
+}
+/* Recipe Instruction Card Finish */
+
+.ingrediants{
+    margin: 3em 0 1.65em;
+}
+
+.ing-head, .inst-head{
+    font-size: 1.5em;
+    font-family: var(--font-playd);
+    font-weight: 700;
+}
+.ing-section-head{
+    font-family: var(--font-playd);
+    font-size: 1.125em;
+    font-style: italic;
+    font-weight: 400;
+}
+input[type='checkbox']{
+    border-radius: 5px;
+    transform: scale(1.5);
+}
+.ing-check-item, .inst-section-item{
+    font-family: var(--font-monts);
+    font-weight: 400;
+    font-size: 1em;
+    width: 600px;
+    display: flex;
+    margin: 1.65em 0;
+}
+.span-bold{
+    font-weight: 700;
+}
+.span-italic{
+    font-style: italic;
+}
+.item-number{
+    padding: 9.5px 15.5px;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+    width: 2.25em;
+    height: 2.25em;
+}
+
+/* .inst-section-item, {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.65em 0;
+} */
+
+.item-text{
+    padding-left: 1.625em;
+} 
+
+.ing-head{
+    margin-bottom: 1.2em;
+}
+
+footer{
+    font-family: var(--font-monts);
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+}
