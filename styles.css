@@ -35,12 +35,14 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    width: 100%;
 }
 /* Recipe Instruction Card Start */
 
 .instructions-card{
     display: flex;
     flex-direction: column;
+    width: 20%;
     height: 70%;
     margin: 3em 0 0 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -54,17 +56,19 @@
 }
 
 .card-item img{
-    width: 28px;
+    width: 28%;
+    height: 28%;
 }
 
 .card-item svg{
-    width: 28px;
-    height: 28px;
+    width: 28%;
+    height: 28%;
 }
 
 .card-text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: var(--font-monts);
     font-size: 0.875em;
     padding-left: 0.85em;
@@ -76,8 +80,14 @@
 }
 /* Recipe Instruction Card Finish */
 
+/* left section */
+
+.left-section{
+    margin: 3em 0 0 0;
+    width: 75%;
+}
 .ingrediants{
-    margin: 3em 0 1.65em;
+    margin: 0 0 1.65em;
 }
 
 .ing-head, .inst-head{
@@ -99,7 +109,6 @@ input[type='checkbox']{
     font-family: var(--font-monts);
     font-weight: 400;
     font-size: 1em;
-    width: 600px;
     display: flex;
     margin: 1.65em 0;
 }
@@ -138,4 +147,33 @@ footer{
     font-size: 14px;
     text-align: center;
     color: #828282;
+}
+
+@media only screen and (max-width: 1205px){
+    .recipe-main{
+        display: inline;
+    }
+    .instructions-card{
+       display: flex;
+       flex-direction: row;
+        width: 100%;
+    }
+    .card-item img{
+        width: 60%;
+        height: 60%;
+    }
+    .card-item svg{
+        width: 60%;
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .card-item img{
+        width: 50%;
+        height: 50%;
+    }
+    .card-item svg{
+        width: 70%;
+        height: 70%;
+    }
 }
